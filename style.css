@@ -1,0 +1,18 @@
+:root {
+    --white-bg: #F2F2F2;
+    --blue-std: #25C7D9;
+    --green-dark: #87BF60;
+    --green-mid: #AED98F;
+    --green-light: #BDD9A9;
+    --text-black: #0D0D0D;
+
+    font-family: "rawline",helvetica,arial,sans-serif;
+}
+
+body {
+    background-color: var(--white-bg);
+}
+
+h1 {
+    color: var(--blue-std);
+}
