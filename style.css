@@ -16,3 +16,18 @@ body {
 h1 {
     color: var(--blue-std);
 }
+
+header {
+    display: flex;
+    flex-direction: row;
+    max-height: 60px;
+}
+
+img {
+    max-height: 80px;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+}
