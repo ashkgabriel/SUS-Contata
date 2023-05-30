@@ -7,14 +7,14 @@
     <title>Agendamentos</title>
 
     <link rel="stylesheet" href="style.css">
-    <script src="./scripts.js" defer></script>
+    
 </head>
 <body>
     <header>
         <figure>
         <img src="./assets/logo_sus_contata.svg" alt="SUS-Contata_logo">
         </figure>
-        <nav>
+        <nav class="gradient-menu">
             <ul id="menu-superior">
                 <li><a href="./index.html">Home</a></li>
                 <li><a href="./agendamentos.html">Agendamentos</a></li>
@@ -26,32 +26,39 @@
         <input type="button" value="Login/Logoff">
     </header>
     
-    <section id="agendamentos">
-        <div class="compromissos" id="item1">
-            <input type="button" value="Agendamento 1">
-            <p>
-                Consulta no dia dd/mm/aaaa às hh:mm
-                UBS 1
-                Av. do Exemplo, 123
-            </p>
-        <div class="compromissos" id="item2">
-            <input type="button" value="Agendamento 2">
-            <p>
-                Consulta no dia dd/mm/aaaa às hh:mm
-                UBS 2
-                Av. do Exemplo, 123
-            </p>
-        <div class="compromissos" id="item3">
-            <input type="button" value="Agendamento 3">
-            <p>
-                Consulta no dia dd/mm/aaaa às hh:mm
-                UBS 3
-                Av. do Exemplo, 123
-            </p>
+    <main id="agendamentos">
+        <div id="compromissos">
+            <div id="item1">
+                <input type="button" value="Agendamento 1">
+                <p>
+                    Consulta no dia dd/mm/aaaa às hh:mm
+                    UBS 1
+                    Av. do Exemplo, 123
+                </p>
+            </div>
+            <div id="item2">
+                <input type="button" value="Agendamento 2">
+                <p>
+                    Consulta no dia dd/mm/aaaa às hh:mm
+                    UBS 2
+                    Av. do Exemplo, 123
+                </p>
+            </div>
+            <div id="item3">
+                <input type="button" value="Agendamento 3">
+                <p>
+                    Consulta no dia dd/mm/aaaa às hh:mm
+                    UBS 3
+                    Av. do Exemplo, 123
+                </p>
+            </div>
         </div>
-    </section>
+        <div id="calendar">
+            <iframe id="calendario-google" src="https://calendar.google.com/calendar/embed?src=mp2sqgr7b0f29ghcilmlnil6g1o6a3ss%40import.calendar.google.com&ctz=America%2FSao_Paulo" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+        </div>
+    </main>
 
-    <footer>
+    <footer class="gradient-menu">
         <ul id="menu-footer">
             <li><a href="./agendamentos">Agendamentos</a></li>
             <li><a href="./index.html">Home</a></li>
@@ -74,5 +81,6 @@
             </ul>
         </div>
     </footer>
+    
 </body>
 </html>
