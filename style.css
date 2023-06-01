@@ -75,10 +75,7 @@ footer {
     position: absolute;
     bottom: 0;
     left: 0;
-<<<<<<< HEAD
-=======
     background: linear-gradient(var(--green-dark), var(--blue-std))
->>>>>>> branch-Gabriel
 }
 
 #agendamentos {
