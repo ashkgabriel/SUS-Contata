@@ -18,6 +18,7 @@ nav {
     min-width: 300px;
     align-items: center;    
     justify-content: center;
+    min-width: fit-content;
 }
 
 
@@ -37,6 +38,7 @@ header {
     height: 80px;
     align-items: center;
     position: sticky;
+    margin-bottom: 30px;
 }
 
 header input {
@@ -123,4 +125,8 @@ footer {
 #contatos ul li, #contatos ul a {
     text-decoration: none;
     margin: 4px;
+}
+
+p, a {
+    color: var(--text-black);
 }
