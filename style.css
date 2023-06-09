@@ -130,3 +130,19 @@ footer {
 p, a {
     color: var(--text-black);
 }
+
+main {
+    display: flex;
+    flex-direction: row;
+}
+
+#coluna2 {
+    display: flex;
+    flex-direction: column;
+}
+
+#contatos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
