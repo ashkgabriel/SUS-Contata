@@ -1,0 +1,47 @@
+:root {
+    --white-bg: #F2F2F2;
+    --blue-std: #25C7D9;
+    --green-dark: #87BF60;
+    --green-mid: #AED98F;
+    --green-light: #BDD9A9;
+    --text-black: #0D0D0D;
+
+    font-family: "rawline",helvetica,arial,sans-serif;
+}
+
+#login{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: justify;
+    max-width: 600px;
+    margin: auto;
+}
+
+#logo2 figure img {
+    display: flex;
+    margin: auto;
+    max-height: 200px;
+}
+
+
+#subtitulo {
+    text-align: center;
+    color: var(--blue-std);
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+
+#botao{
+    margin-top: 100px;
+    text-align: center;
+}
+#botao button {
+    background-color: var(--blue-std);
+    padding: 2px;
+    width: 150px;
+    height: 40px;
+    border-radius: 10px;
+    color: var(--white-bg);
+    font-weight: bold;
+}
