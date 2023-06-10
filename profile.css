@@ -1,0 +1,39 @@
+main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3%;
+}
+
+#coluna2 {
+  margin: 0px 5% 0px 80px;
+}
+
+main input {
+  margin: 2px
+}
+
+#coluna1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#informacoesPaciente {
+  display: flex;
+  flex-direction: column;
+}
+
+#informacoesPaciente div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#foto img {
+  max-height: 180px;
+  border-radius: 48px;
+}
