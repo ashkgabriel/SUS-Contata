@@ -1,0 +1,35 @@
+:root {
+    --white-bg: #F2F2F2;
+    --blue-std: #25C7D9;
+    --green-dark: #87BF60;
+    --green-mid: #AED98F;
+    --green-light: #BDD9A9;
+    --text-black: #0D0D0D;
+
+    font-family: "rawline",helvetica,arial,sans-serif;
+}
+
+#calendar:hover {
+    transition: 2s;
+    transform: translate(-100%);
+    zoom: 120%;
+}
+
+.compromissos {
+    display: flex;
+    flex-direction: column;
+    margin: 8px;
+    padding: 16px;
+    background-color: var(--green-light);
+    border-radius: 8px;
+    align-items: center;
+}
+
+.titulo-agendamento {
+    background-color: var(--green-dark);
+    border-radius: 8px;
+    width: fit-content;
+    padding: 8px;
+    font-weight: bold;
+    border: none;
+}
