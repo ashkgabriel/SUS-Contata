@@ -67,3 +67,24 @@ pre {
     font-family: "rawline",helvetica,arial,sans-serif;
     text-align: center;
 }
+
+#agendamentos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#compromissos {
+    display: flex;
+    flex-direction: column;
+}
+
+#calendar {
+    width: fit-content;
+    height: fit-content;
+}
+
+#calendario-google {
+    width: 300px;
+    height: 300px;
+}

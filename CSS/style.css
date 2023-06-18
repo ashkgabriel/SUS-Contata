@@ -51,6 +51,7 @@ header input {
 
 main {
     display: flex;
+    flex-direction: row;
     flex-grow: 1;
 }
 
@@ -70,6 +71,7 @@ nav ul {
 nav li, nav a {
     text-decoration: none;
     margin-right: 30px;
+    font-weight: bold;
 }
 
 footer {
@@ -79,27 +81,6 @@ footer {
     height: 100px;
     background: linear-gradient(var(--green-dark), var(--blue-std));
     
-}
-
-#agendamentos {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-
-#compromissos {
-    display: flex;
-    flex-direction: column;
-}
-
-#calendar {
-    width: fit-content;
-    height: fit-content;
-}
-
-#calendario-google {
-    width: 300px;
-    height: 300px;
 }
 
 #menu-footer {
@@ -112,38 +93,6 @@ footer {
     text-decoration: none;
 }
 
-#contatos {
-    display: flex;
-}
-
-#contatos ul {
-    list-style-type: none;
-    display: flex;
-    flex-direction: row;
-    margin-right: 16px;
-}
-
-#contatos ul li, #contatos ul a {
-    text-decoration: none;
-    margin: 4px;
-}
-
 p, a {
     color: var(--text-black);
-}
-
-main {
-    display: flex;
-    flex-direction: row;
-}
-
-#coluna2 {
-    display: flex;
-    flex-direction: column;
-}
-
-#contatos {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
 }
