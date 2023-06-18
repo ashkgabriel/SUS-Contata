@@ -9,15 +9,16 @@
     font-family: "rawline",helvetica,arial,sans-serif;
 }
 
+
 nav {
     display: flex;
     background: linear-gradient(var(--green-dark), var(--blue-std));
     margin: auto;
     height: 60px;
-    width: 50%;
+    width: 70%;
     min-width: 300px;
     align-items: center;    
-    justify-content: center;
+    justify-content: space-evenly;
     min-width: fit-content;
 }
 
@@ -26,6 +27,8 @@ body {
     background-color: var(--white-bg);
     display: flex;
     flex-direction: column;
+    min-height: 100vh;
+    flex-grow: 1;
 }
 
 h1 {
@@ -47,6 +50,7 @@ header input {
 
 
 main {
+    display: flex;
     flex-grow: 1;
 }
 
@@ -73,11 +77,8 @@ footer {
     align-items: center;
     justify-content: space-between;
     height: 100px;
-    width: 100%;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    background: linear-gradient(var(--green-dark), var(--blue-std))
+    background: linear-gradient(var(--green-dark), var(--blue-std));
+    
 }
 
 #agendamentos {

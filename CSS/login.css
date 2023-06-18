@@ -1,0 +1,26 @@
+main {
+    align-items: center;
+    flex-direction: column;
+}
+
+#logo img {
+    max-height: max-content;
+}
+
+#botao {
+    display: flex;
+    flex-direction: column;
+}
+
+#botao button {
+    margin-top: 24px;
+}
+
+#infoLogin {
+    display: flex;
+    flex-direction: column;
+}
+
+.usuario {
+    display: inline;
+}

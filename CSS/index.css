@@ -12,7 +12,7 @@
 #login{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     text-align: justify;
     max-width: 600px;
     margin: auto;
@@ -33,7 +33,7 @@
 }
 
 #botao{
-    margin-top: 100px;
+    margin-top: 60px;
     text-align: center;
 }
 #botao button {
@@ -44,4 +44,10 @@
     border-radius: 10px;
     color: var(--white-bg);
     font-weight: bold;
+    margin-bottom: 60px;
+}
+
+p {
+    font-family: "rawline",helvetica,arial,sans-serif;
+    text-align-last: auto;
 }

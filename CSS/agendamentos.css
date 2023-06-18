@@ -23,6 +23,12 @@
     background-color: var(--green-light);
     border-radius: 8px;
     align-items: center;
+    width: 120%;
+}
+
+.confirmacao  {
+    display: flex;
+    flex-direction: row;
 }
 
 .titulo-agendamento {
@@ -32,4 +38,32 @@
     padding: 8px;
     font-weight: bold;
     border: none;
+}
+
+.confirmar{
+    background-color: var(--green-dark);
+    border-radius: 8px;
+    width: fit-content;
+    padding: 8px;
+    font-weight: bold;
+    border: none;
+}
+
+.confirmar:hover, .cancelar:hover {
+    transition: 0.5s;
+    color: var(--white-bg);
+}
+
+.cancelar {
+    background-color: red;
+    border-radius: 8px;
+    width: fit-content;
+    padding: 8px;
+    font-weight: bold;
+    border: none;
+}
+
+pre {
+    font-family: "rawline",helvetica,arial,sans-serif;
+    text-align: center;
 }
