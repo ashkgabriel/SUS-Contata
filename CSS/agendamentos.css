@@ -31,6 +31,10 @@
     flex-direction: row;
 }
 
+.confirmacao input {
+    margin: 0px 8px;
+}
+
 .titulo-agendamento {
     background-color: var(--green-dark);
     border-radius: 8px;
@@ -71,7 +75,7 @@ pre {
 #agendamentos {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
 }
 
 #compromissos {

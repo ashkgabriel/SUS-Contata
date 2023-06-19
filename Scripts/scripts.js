@@ -80,8 +80,3 @@ ${agendamento2.UBS.nome}: ${agendamento2.UBS.logradouro}, ${agendamento2.UBS.num
 
 ${agendamento3.UBS.nome}: ${agendamento3.UBS.logradouro}, ${agendamento3.UBS.numero} - ${agendamento3.UBS.bairro}`
   });
-  
-  
-  document.getElementById("agendamento1").addEventListener("click", function () {
-    document.getElementById("descricao1").innerHTML = agendamento1.tipo;
-  });
