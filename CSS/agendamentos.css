@@ -108,7 +108,7 @@ pre {
     color: var(--white-bg);
     width: 150px;
     padding: 2px;
-    border: none;
+    border:  1px solid var(--text-black);
   }
 
   .encaixe {
