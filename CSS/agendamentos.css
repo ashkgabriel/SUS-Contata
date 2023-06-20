@@ -1,0 +1,129 @@
+:root {
+    --white-bg: #F2F2F2;
+    --blue-std: #25C7D9;
+    --green-dark: #87BF60;
+    --green-mid: #AED98F;
+    --green-light: #BDD9A9;
+    --text-black: #0D0D0D;
+
+    font-family: "rawline",helvetica,arial,sans-serif;
+}
+
+.compromissos {
+    display: flex;
+    flex-direction: column;
+    margin: 8px;
+    padding: 16px;
+    background-color: var(--green-light);
+    border-radius: 8px;
+    align-items: center;
+    width: 120%;
+}
+
+.confirmacao  {
+    display: flex;
+    flex-direction: row;
+}
+
+.confirmacao input {
+    margin: 0px 8px;
+}
+
+.titulo-agendamento {
+    background-color: var(--green-dark);
+    border-radius: 8px;
+    width: fit-content;
+    padding: 8px;
+    font-weight: bold;
+    border: none;
+}
+
+.confirmar{
+    background-color: var(--green-dark);
+    border-radius: 8px;
+    width: fit-content;
+    padding: 8px;
+    font-weight: bold;
+    border: none;
+}
+
+.confirmar:hover, .cancelar:hover, .encaixe:hover, .reagendar:hover{
+    transition: 0.5s;
+    color: var(--white-bg);
+}
+
+.cancelar {
+    background-color: red;
+    border-radius: 8px;
+    width: fit-content;
+    padding: 8px;
+    font-weight: bold;
+    border: none;
+}
+
+pre {
+    font-family: "rawline",helvetica,arial,sans-serif;
+    text-align: center;
+}
+
+#agendamentos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#compromissos {
+    display: flex;
+    flex-direction: column;
+}
+
+#calendar {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    width: fit-content;
+    height: fit-content;
+    margin-top: 8px;
+}
+
+#calendar img {
+    margin: 0;
+}
+
+#calendario-google {
+    width: 300px;
+    height: 300px;
+}
+
+.calendario-google.active iframe {
+        opacity: 1;
+        transform: translateX(-200px);
+        margin-right: 24px;
+}
+
+#login-logoff {
+    background-color: var(--blue-std);
+    border-radius: 16px;
+    font-weight: bold;
+    color: var(--white-bg);
+    width: 150px;
+    padding: 2px;
+  }
+
+  .encaixe {
+    background-color: grey;
+    border-radius: 8px;
+    width: fit-content;
+    padding: 8px;
+    font-weight: bold;
+    border: none;
+  }
+  
+  .reagendar {
+    background-color: yellow;
+    border-radius: 8px;
+    width: fit-content;
+    padding: 8px;
+    font-weight: bold;
+    border: none;
+  }
