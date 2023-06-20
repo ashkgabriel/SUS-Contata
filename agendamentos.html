@@ -9,23 +9,23 @@
     <link rel="stylesheet" href="./CSS/style.css">
     <link rel="stylesheet" href="./CSS/agendamentos.css">
 
-    <script src="/Scripts/scripts.js" defer></script>
+    <script src="./Scripts/scriptLogin.js" defer></script>
+    <script src="/Scripts/scriptAgendamentos.js" defer></script>
 </head>
 <body>
     <header>
         <figure>
-        <img src="./assets/logo_sus_contata.svg" alt="SUS-Contata_logo">
+        <img class="imgIcones" src="./assets/logo_sus_contata.svg" alt="SUS-Contata_logo">
         </figure>
         <nav id="gradient-menu">
             <ul id="menu-superior">
                 <li><a href="./index.html">Home</a></li>
                 <li><a href="./agendamentos.html">Agendamentos</a></li>
                 <li><a href="./profile.html">Meu Perfil</a></li>
-                <li><a href="./login.html">Logoff</a></li>
+                <input id="login-logoff" type="button" value="Login/Logoff">
             </ul>
         </nav>
 
-        <input type="button" value="Login/Logoff">
     </header>
     
     <main id="agendamentos">
@@ -33,9 +33,7 @@
             <div class="compromissos" id="item1">
                 <span class="titulo-agendamento" id="agendamento1"> </span>
                 <pre id="descricao1">
-                    Consulta no dia dd/mm/aaaa às hh:mm
-                    UBS 1
-                    Av. do Exemplo, 123
+                    
                 </pre>
                 <div class="confirmacao">
                     <input type="button" id="confirmar1" class="confirmar" value="Confirmar">
@@ -45,9 +43,7 @@
             <div class="compromissos" id="item2">
                 <span class="titulo-agendamento" id="agendamento2"> </span>
                 <pre id="descricao2">
-                    Consulta no dia dd/mm/aaaa às hh:mm
-                    UBS 2
-                    Av. do Exemplo, 123
+                    
                 </pre>
                 <div class="confirmacao">
                     <input type="button" id="confirmar2" class="confirmar" value="Confirmar">
@@ -57,9 +53,7 @@
             <div class="compromissos" id="item3">
                 <span class="titulo-agendamento" id="agendamento3"> </span>
                 <pre id="descricao3">
-                    Consulta no dia dd/mm/aaaa às hh:mm
-                    UBS 3
-                    Av. do Exemplo, 123
+                    
                 </pre>
                 <div class="confirmacao">
                     <input type="button" id="confirmar3" class="confirmar" value="Confirmar">
@@ -68,8 +62,8 @@
             </div>
         </div>
         <div id="calendar">
-            <!-- <iframe id="calendario-google" src="https://calendar.google.com/calendar/embed?src=mp2sqgr7b0f29ghcilmlnil6g1o6a3ss%40import.calendar.google.com&ctz=America%2FSao_Paulo" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe> -->
-            <img src="./assets/calendar.png" alt="calendarIcon">
+            <iframe id="calendario-google" src="https://calendar.google.com/calendar/embed?src=mp2sqgr7b0f29ghcilmlnil6g1o6a3ss%40import.calendar.google.com&ctz=America%2FSao_Paulo" style="border: 0" width="800" height="600" frameborder="0" scrolling="no" hidden></iframe>
+            <img class="imgIcones" src="./assets/calendar.png" alt="calendarIcon">
         </div>
     </main>
 
@@ -82,16 +76,16 @@
         </ul>
 
         <div id="apoiadores">
-            <img src="./assets/apoiador1.jpg" alt="apoiador1" class="apoiadores">
-            <img src="./assets/apoiador2.jpg" alt="apoiador2" class="apoiadores">
-            <img src="./assets/apoiador3.jpg" alt="apoiador3" class="apoiadores">
-            <img src="./assets/apoiador4.jpg" alt="apoiador4" class="apoiadores">
+            <img src="./assets/apoiadores/apoiador1.png" alt="apoiador1" class="apoiadores">
+            <img src="./assets/apoiadores/apoiador2.png" alt="apoiador2" class="apoiadores">
+            <img src="./assets/apoiadores/apoiador3.png" alt="apoiador3" class="apoiadores">
+            <img src="./assets/apoiadores/apoiador4.png" alt="apoiador4" class="apoiadores">
         </div>
         <div id="contatos">
             <ul>
-                <li><a target="_blank" href="https://facebook.com" >Facebook</a></li>
-                <li><a target="_blank" href="https://instagram.com">Instagram</a></li>
-                <li><a target="_blank" href="https://linkedin.com">LinkedIn</a></li>
+                <li><a target="_blank" href="https://facebook.com"><img src="assets/Facebook_f_logo_(2019).svg.webp" alt=""></a></li>
+                <li><a target="_blank" href="https://instagram.com"><img src="assets/instagram-icon-free-png.webp" alt=""></a></li>
+                <li><a target="_blank" href="https://linkedin.com"><img src="assets/linkedin-logo-png-1826.png" alt=""></a></li>
             </ul>
         </div>
     </footer>

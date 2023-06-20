@@ -89,3 +89,12 @@ main {
   border-radius: 10px;
   justify-content: space-between;
 }
+
+#login-logoff {
+  background-color: var(--blue-std);
+  border-radius: 16px;
+  font-weight: bold;
+  color: var(--white-bg);
+  width: 150px;
+  padding: 2px;
+}

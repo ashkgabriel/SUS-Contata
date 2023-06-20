@@ -9,12 +9,6 @@
     font-family: "rawline",helvetica,arial,sans-serif;
 }
 
-#calendar:hover {
-    transition: 2s;
-    transform: translate(-100%);
-    zoom: 120%;
-}
-
 .compromissos {
     display: flex;
     flex-direction: column;
@@ -53,7 +47,7 @@
     border: none;
 }
 
-.confirmar:hover, .cancelar:hover {
+.confirmar:hover, .cancelar:hover, .encaixe:hover, .reagendar:hover{
     transition: 0.5s;
     color: var(--white-bg);
 }
@@ -75,7 +69,7 @@ pre {
 #agendamentos {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 
 #compromissos {
@@ -84,11 +78,52 @@ pre {
 }
 
 #calendar {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
     width: fit-content;
     height: fit-content;
+    margin-top: 8px;
+}
+
+#calendar img {
+    margin: 0;
 }
 
 #calendario-google {
     width: 300px;
     height: 300px;
 }
+
+.calendario-google.active iframe {
+        opacity: 1;
+        transform: translateX(-200px);
+        margin-right: 24px;
+}
+
+#login-logoff {
+    background-color: var(--blue-std);
+    border-radius: 16px;
+    font-weight: bold;
+    color: var(--white-bg);
+    width: 150px;
+    padding: 2px;
+  }
+
+  .encaixe {
+    background-color: grey;
+    border-radius: 8px;
+    width: fit-content;
+    padding: 8px;
+    font-weight: bold;
+    border: none;
+  }
+  
+  .reagendar {
+    background-color: yellow;
+    border-radius: 8px;
+    width: fit-content;
+    padding: 8px;
+    font-weight: bold;
+    border: none;
+  }
