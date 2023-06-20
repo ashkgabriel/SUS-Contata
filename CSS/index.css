@@ -171,6 +171,7 @@ p {
     color: var(--white-bg);
     width: 150px;
     padding: 2px;
+    border: none;
   }
 
   #carousel-map {
