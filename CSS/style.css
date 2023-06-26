@@ -71,11 +71,11 @@ nav ul {
     list-style-type: none;
     align-items: center;
     flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 nav li, nav a {
     text-decoration: none;
-    margin-right: auto;
     font-weight: bold;
     color: var(--white-bg);
     min-width: fit-content;
