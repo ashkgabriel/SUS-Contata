@@ -14,57 +14,75 @@
 </head>
 <body>
     <header>
-        <figure>
-        <img class="imgIcones" src="./assets/logo_sus_contata.svg" alt="SUS-Contata_logo">
-        </figure>
         <nav id="gradient-menu">
+            <figure>
+            <img class="imgIcones" src="./assets/logo_sus_contata.svg" alt="SUS-Contata_logo">
+            </figure>
             <ul id="menu-superior">
                 <li><a href="./index.html">Home</a></li>
                 <li><a href="./agendamentos.html">Agendamentos</a></li>
                 <li><a href="./profile.html">Meu Perfil</a></li>
-                <input id="login-logoff" type="button" value="Login/Logoff">
+                <li><a href="./login.html">Sobre</a></li>
+                <!-- <input id="login-logoff" type="button" value="Login/Logoff"> -->
             </ul>
         </nav>
 
     </header>
     
     <main id="agendamentos">
-        <div id="compromissos">
-            <div class="compromissos" id="item1">
-                <span class="titulo-agendamento" id="agendamento1"> </span>
-                <pre id="descricao1">
-                    
-                </pre>
-                <div class="confirmacao">
-                    <input type="button" id="confirmar1" class="confirmar" value="Confirmar">
-                    <input type="button" id="cancelar1" class="cancelar" value="Cancelar">
-                </div>
-            </div>
-            <div class="compromissos" id="item2">
-                <span class="titulo-agendamento" id="agendamento2"> </span>
-                <pre id="descricao2">
-                    
-                </pre>
-                <div class="confirmacao">
-                    <input type="button" id="confirmar2" class="confirmar" value="Confirmar">
-                    <input type="button" id="cancelar2" class="cancelar" value="Cancelar">
-                </div>
-            </div>
-            <div class="compromissos" id="item3">
-                <span class="titulo-agendamento" id="agendamento3"> </span>
-                <pre id="descricao3">
-                    
-                </pre>
-                <div class="confirmacao">
-                    <input type="button" id="confirmar3" class="confirmar" value="Confirmar">
-                    <input type="button" id="cancelar3" class="cancelar" value="Cancelar">
-                </div>
-            </div>
+        <div id="divFiltro">
+            <select name="filtroEspecialidade" id="filtroEspecialidade">
+                <option value="">Selecione a especialidade</option>
+                <option value="alergologista">Alergologista</option>
+                <option value="pediatra">Pediatra</option>
+                <option value="psiquiatra">Psiquiatra</option>
+                <option value="ginecologista">Ginecologista</option>
+                <option value="neurologista">Neurologista</option>
+            </select>
+            <input id="filtro" type="text" placeholder="Digite a informação que deseja filtrar.">    
+            <button id="procurar" >🔎</button>
         </div>
-        <div id="calendar">
-            <iframe id="calendario-google" src="https://calendar.google.com/calendar/embed?src=mp2sqgr7b0f29ghcilmlnil6g1o6a3ss%40import.calendar.google.com&ctz=America%2FSao_Paulo" style="border: 0" width="800" height="600" frameborder="0" scrolling="no" hidden></iframe>
-            <img class="imgIcones" src="./assets/calendar.png" alt="calendarIcon">
-        </div>
+        
+        <section id="dialogo">
+            
+            <div id="compromissos">
+                <h2>Consultas agendadas</h2>
+                <div class="compromissos" id="item1">
+                    <span class="titulo-agendamento" id="agendamento1"> </span>
+                    <pre id="descricao1">
+                        
+                    </pre>
+                    <div class="confirmacao">
+                        <input type="button" id="confirmar1" class="confirmar" value="Confirmar">
+                        <input type="button" id="cancelar1" class="cancelar" value="Cancelar">
+                    </div>
+                </div>
+                <div class="compromissos" id="item2">
+                    <span class="titulo-agendamento" id="agendamento2"> </span>
+                    <pre id="descricao2">
+                        
+                    </pre>
+                    <div class="confirmacao">
+                        <input type="button" id="confirmar2" class="confirmar" value="Confirmar">
+                        <input type="button" id="cancelar2" class="cancelar" value="Cancelar">
+                    </div>
+                </div>
+                <div class="compromissos" id="item3">
+                    <span class="titulo-agendamento" id="agendamento3"> </span>
+                    <pre id="descricao3">
+                        
+                    </pre>
+                    <div class="confirmacao">
+                        <input type="button" id="confirmar3" class="confirmar" value="Confirmar">
+                        <input type="button" id="cancelar3" class="cancelar" value="Cancelar">
+                    </div>
+                </div>
+            </div>
+            <div id="calendar">
+                <iframe id="calendario-google" src="https://calendar.google.com/calendar/embed?src=mp2sqgr7b0f29ghcilmlnil6g1o6a3ss%40import.calendar.google.com&ctz=America%2FSao_Paulo" style="border: 0" width="800" height="600" frameborder="0" scrolling="no" hidden></iframe>
+                <img class="imgIcones" src="./assets/calendar.png" alt="calendarIcon">
+            </div>
+        </section>
     </main>
 
     <footer>

@@ -5,6 +5,7 @@
     --green-mid: #AED98F;
     --green-light: #BDD9A9;
     --text-black: #0D0D0D;
+    --blue-bg: #5269c7;
 
     font-family: "rawline",helvetica,arial,sans-serif;
 }
@@ -12,14 +13,16 @@
 
 nav {
     display: flex;
-    background: linear-gradient(var(--green-dark), var(--blue-std));
+    background: var(--blue-bg);
     margin: auto;
-    height: 60px;
+    height: 100px;
     width: 70%;
     min-width: 300px;
+    width: 100%;
     align-items: center;    
-    justify-content: space-evenly;
     min-width: fit-content;
+    box-shadow: #0D0D0D;
+    border-radius: 12px;
 }
 
 body {
@@ -43,42 +46,47 @@ header {
     margin-bottom: 30px;
 }
 
-header input {
-    margin: auto;
-}
-
-
 main {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-grow: 1;
 }
 
 .imgIcones {
-    max-height: 60px;
+    max-height: 120px;
     margin: auto;
+    margin-top: 8px;
+}
+
+header figure {
+    width: 120px;
+    margin-top: 8px;
 }
 
 nav ul {
     display: flex;
     flex-direction: row;
     text-decoration: none;
-    width: auto;
+    width: 100%;
     list-style-type: none;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 nav li, nav a {
     text-decoration: none;
-    margin-right: 30px;
+    margin-right: auto;
     font-weight: bold;
+    color: var(--white-bg);
+    min-width: fit-content;
 }
 
 footer {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 100px;
-    background: linear-gradient(var(--green-dark), var(--blue-std));
+    height: 150px;
+    background: var(--blue-bg);
     margin-top: 60px;
 }
 
@@ -104,13 +112,16 @@ footer {
     margin: 4px;
   }
 
-p, a {
-    color: var(--text-black);
+footer p, a {
+    color: var(--white-bg);
+    font-size: 24px;
+    font-weight: bold;
 }
 
 .apoiadores {
     height: 60px;
-    padding-right: 20px;
+    padding: 20px;
+    background: radial-gradient(var(--white-bg), var(--blue-bg) 75%);
   }
 
   #contatos img {
@@ -121,8 +132,10 @@ p, a {
     background-color: var(--blue-std);
     border-radius: 16px;
     font-weight: bold;
+    font-size: 24px;
     color: var(--white-bg);
-    width: 150px;
-    padding: 2px;
+    min-width: fit-content;
+    padding: 5px;
+    height: 40px;
     border:  1px solid var(--text-black);
   }

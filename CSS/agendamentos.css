@@ -68,13 +68,14 @@ pre {
 
 #agendamentos {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-evenly;
 }
 
 #compromissos {
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 #calendar {
@@ -127,4 +128,24 @@ pre {
     padding: 8px;
     font-weight: bold;
     border: none;
+  }
+  
+  #filtro {
+    background-color: var(--green-light);
+    padding: 8px;
+    width: 300px;
+    text-align: center;
+    border-radius: 16px;
+  }
+
+  #divFiltro {
+    align-items: center;
+    margin: auto;
+    text-align: center;
+  }
+
+  #dialogo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
   }
