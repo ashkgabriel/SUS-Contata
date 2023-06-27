@@ -83,8 +83,38 @@ ${agendamento3.UBS.nome}: ${agendamento3.UBS.logradouro}, ${agendamento3.UBS.num
 
   let calendarioIcone = document.querySelector("#calendar img")
   let calendar = document.querySelector("#calendar")
+  let detalhes1 = document.querySelector("#detalhes1")
+  let detalhes2 = document.querySelector("#detalhes2")
+  let detalhes3 = document.querySelector("#detalhes3")
+  let divDetalhes1 = document.querySelector("#divDetalhes1")
+  let divDetalhes2 = document.querySelector("#divDetalhes2")
+  let divDetalhes3 = document.querySelector("#divDetalhes3")
   let iframe = document.querySelector("#calendario-google")
 
+detalhes1.addEventListener('click', function() {
+  if (divDetalhes1.style.display === 'block') {
+    divDetalhes1.style.display = 'none';
+  } else {
+    divDetalhes1.style.display = 'block';
+    divDetalhes1.style.transform = 'none';
+  }
+});
+detalhes2.addEventListener('click', function() {
+  if (divDetalhes2.style.display === 'block') {
+    divDetalhes2.style.display = 'none';
+  } else {
+    divDetalhes2.style.display = 'block';
+    divDetalhes2.style.transform = 'none';
+  }
+});
+detalhes3.addEventListener('click', function() {
+  if (divDetalhes3.style.display === 'block') {
+    divDetalhes3.style.display = 'none';
+  } else {
+    divDetalhes3.style.display = 'block';
+    divDetalhes3.style.transform = 'none';
+  }
+});
 
 calendar.addEventListener('click', function() {
   if (iframe.style.display === 'block') {

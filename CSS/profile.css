@@ -1,15 +1,8 @@
-:root {
-  --white-bg: #F2F2F2;
-  --blue-std: #25C7D9;
-  --green-dark: #87BF60;
-  --green-mid: #AED98F;
-  --green-light: #BDD9A9;
-  --text-black: #0D0D0D;
 
-  font-family: "rawline",helvetica,arial,sans-serif;
-}
 
 main {
+    display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
     align-content: start;

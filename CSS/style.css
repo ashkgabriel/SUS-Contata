@@ -1,9 +1,9 @@
 :root {
     --white-bg: #F2F2F2;
     --blue-std: #25C7D9;
-    --green-dark: #87BF60;
-    --green-mid: #AED98F;
-    --green-light: #BDD9A9;
+    --green-dark: #3255e1;
+    --green-mid: #6580eb;
+    --green-light: #9badf6;
     --text-black: #0D0D0D;
     --blue-bg: #5269c7;
 
@@ -60,7 +60,7 @@ main {
 
 header figure {
     width: 120px;
-    margin-top: 8px;
+    margin-top: 24px;
 }
 
 nav ul {
@@ -88,6 +88,7 @@ footer {
     height: 150px;
     background: var(--blue-bg);
     margin-top: 60px;
+    border-radius: 12px;
 }
 
 #menu-footer {
