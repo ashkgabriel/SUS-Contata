@@ -40,6 +40,10 @@ h3 {
     border-width: 1px;
 }
 
+#filtro::placeholder {
+    color: var(--white-bg);
+}
+
 #historico {
     background-color: var(--green-light);
     padding: 8px;
